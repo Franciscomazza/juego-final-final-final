@@ -643,3 +643,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 0.1
   toright: 0
+  prefab1: {fileID: 0}
