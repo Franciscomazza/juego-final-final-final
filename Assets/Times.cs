@@ -1,10 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class Btncomenzar : MonoBehaviour
+public class Times : MonoBehaviour
 {
+
+    float elapstime;
+    public Text txtTime;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,11 +18,7 @@ public class Btncomenzar : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-        }
-        public void Restart()
-        {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-        // para reiniciar el juego
+        elapstime = Time.timeSinceLevelLoad;
+        txtTime.text = Mathf.Floor(elapstime).ToString();
     }
 }

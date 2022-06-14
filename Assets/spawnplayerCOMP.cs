@@ -1,10 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class spawnplayerCOMP : MonoBehaviour
 {
     public GameObject flecha;
+    public GameObject spawnplayer;
 
     public float throwPower;
     public float throwSpeed;
@@ -23,6 +25,7 @@ public class spawnplayerCOMP : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        spawnplayer.SetActive(false);
         toright = true;
         flecha.SetActive(false);
         RB = GetComponent<Rigidbody>();
@@ -73,8 +76,9 @@ public class spawnplayerCOMP : MonoBehaviour
         {
             throwInfluence *= -1;
         }
-
+        
         if (Input.GetKeyDown(KeyCode.Space))
+        
         {
             setpos = true;
             if(setpos == true)
@@ -94,5 +98,11 @@ public class spawnplayerCOMP : MonoBehaviour
                 setrot = true;
             }
         }
+    }
+
+    public void btn()
+    {
+       
+        spawnplayer.SetActive(true);
     }
 }
