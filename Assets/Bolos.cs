@@ -8,14 +8,14 @@ public class Bolos : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Bola.SetActive(false);
+        Bola.SetActive(true);
     }
 
     private void OnCollisionEnter(Collision col)
     {
         if (col.gameObject.tag == "bolos")
         {
-            Bola.SetActive(true);
+            Bola.SetActive(false);
         }
     }
 }
