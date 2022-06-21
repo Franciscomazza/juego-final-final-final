@@ -105,4 +105,12 @@ public class spawnplayerCOMP : MonoBehaviour
        
         spawnplayer.SetActive(true);
     }
+
+    void OnCollisionEnter(Collision col)
+    {
+        if (col.gameObject.tag == "Bolos")
+        {
+            Debug.Log("Hola");
+        }
+    }
 }
