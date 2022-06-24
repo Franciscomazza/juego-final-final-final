@@ -700,8 +700,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 436181778}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.5344214, y: -1.283606, z: -0.093224645}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4, y: 2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1790,8 +1790,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1266709511}
-  m_LocalRotation: {x: 0.08414009, y: 0.702083, z: -0.08414011, w: 0.702083}
-  m_LocalPosition: {x: -11.307, y: 1.551, z: 0.066}
+  m_LocalRotation: {x: -0.00000014380697, y: -0.7071068, z: 0.0000001244139, w: -0.7071068}
+  m_LocalPosition: {x: -9.971452, y: 1.2553377, z: 0.0184615}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2104,6 +2104,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   flecha: {fileID: 1789908491}
   spawnplayer: {fileID: 1866470572}
+  cuboclon: {fileID: 3544326903683771445, guid: 64177db5e73f76147837a605db236618,
+    type: 3}
   throwPower: 15
   throwSpeed: 6
   toright: 0
@@ -2199,6 +2201,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Bola: {fileID: 1866470572}
+  cuboclon: {fileID: 3544326903683771445, guid: 64177db5e73f76147837a605db236618,
+    type: 3}
 --- !u!4 &1927682618
 Transform:
   m_ObjectHideFlags: 0
@@ -2207,7 +2211,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1927682616}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.5344214, y: -1.283606, z: -0.093224645}
+  m_LocalPosition: {x: 4, y: 2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

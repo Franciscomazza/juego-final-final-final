@@ -7,11 +7,12 @@ public class spawnplayerCOMP : MonoBehaviour
 {
     public GameObject flecha;
     public GameObject spawnplayer;
-
+    public GameObject cuboclon;
+    Bolos managesBolos;
     public float throwPower;
     public float throwSpeed;
     int throwInfluence = 1;
-
+    int cubi = 1;
     public bool toright;
     public float horSpeed;
     int influence = 1;
@@ -29,6 +30,7 @@ public class spawnplayerCOMP : MonoBehaviour
         toright = true;
         flecha.SetActive(false);
         RB = GetComponent<Rigidbody>();
+        managesBolos = FindObjectOfType<Bolos>();
     }
 
     // Update is called once per frame
@@ -110,7 +112,9 @@ public class spawnplayerCOMP : MonoBehaviour
     {
         if (col.gameObject.tag == "Bolos")
         {
-            Debug.Log("Hola");
+            managesBolos.BolaChoca();
         }
     }
+
+    
 }

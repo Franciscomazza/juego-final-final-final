@@ -6,7 +6,9 @@ using UnityEngine.UI;
 public class Bolos : MonoBehaviour
 {
     public GameObject Bola;
+    public GameObject cuboclon;
 
+    int cubi = 1;
 
 
     // Start is called before the first frame update
@@ -16,13 +18,16 @@ public class Bolos : MonoBehaviour
         Bola.SetActive(true);
     }
 
-    private void OnTriggerEnter(Collider col)
+    public void BolaChoca()
     {
-        if (col.gameObject.tag == "bolos")
+        while (cubi < 10)
         {
-            Bola.SetActive(false);
-         
-       
+            InstantiateCubitos();
+            cubi++;
         }
+    }
+    void InstantiateCubitos()
+    {
+        Instantiate(cuboclon, transform.position, transform.rotation);
     }
 }
